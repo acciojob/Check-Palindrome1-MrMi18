@@ -6,11 +6,13 @@ function palindrome(str){
 	let n = str.length-1;
 	while(i<n){
 		if(str[i]!==str[n]) {
-			console.log("false");
-			return ;
+			// console.log("false");
+			return false ;
 		}
+		i++;
+		n--;
     }
-	console.log("true");
-	return ;
+	// console.log("true");
+	return true ;
 }
 module.exports = palindrome
